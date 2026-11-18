@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #edf3ff, #e1e9ff);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 78%;
+    min-height: 655px;
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 44px;
+    color: #172b49;
+    margin-bottom: 55px;
+}
+
+.quote-box {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+}
+
+.quote-left,
+.quote-right {
+    position: absolute;
+    font-size: 65px;
+    color: #c4d0ff;
+    font-weight: bold;
+}
+
+.quote-left {
+    top: -50px;
+    left: -30px;
+}
+
+.quote-right {
+    bottom: 30px;
+    right: -25px;
+}
+
+#quote {
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.4;
+    color: #263b5a;
+    margin-bottom: 65px;
+}
+
+#author {
+    font-size: 26px;
+    font-weight: normal;
+    color: #5638ff;
+    margin-bottom: 45px;
+}
+
+button {
+    background: #5035f5;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 17px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 0 5px #d5d5d5;
+}
+
+button:hover {
+    background: #3820d5;
+    transform: translateY(-3px);
+}
+
+.description {
+    margin-top: 55px;
+    color: #65758c;
+    font-size: 20px;
+}
+
+/* Адаптация для телефона */
+
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    #quote {
+        font-size: 23px;
+    }
+
+    #author {
+        font-size: 20px;
+    }
+
+    .quote-left,
+    .quote-right {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
