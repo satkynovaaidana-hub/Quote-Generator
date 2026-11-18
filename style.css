@@ -136,9 +136,3 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.mascot {
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    margin-bottom: 15px;
-}
