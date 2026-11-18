@@ -128,9 +128,17 @@ button:hover {
         margin-top: 40px;
     }
 }
+
 .buttons {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.mascot {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
